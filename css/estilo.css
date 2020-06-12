@@ -1,8 +1,8 @@
-/* Geral */
+/* Estrutura do Site */
 
 body {
     background: rgb(244, 242, 236) url(../img/fundo.png) repeat-x;
-    font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    font: 13px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
 #container {
@@ -17,6 +17,10 @@ legend {
 a:link, a:visited, a:active {
     color: #af640d;
     text-decoration: none;
+}
+
+a:hover {
+    color: #227115;
 }
 
 h1 {
@@ -37,7 +41,7 @@ h3 {
 h4 {
     color: #af640d;
     text-transform: uppercase;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     margin-bottom: 0;
 }
 
@@ -47,10 +51,6 @@ input {
     background: #ffffff;
     border: none;
     font-size: 1em;
-}
-
-iframe{
-    border: 0;
 }
 
 /* Início Topo */
@@ -79,11 +79,15 @@ nav ul li {
     font-size: 12px;
 }
 
-nav ul li a {
+nav ul li a:link {
     display: block;
     margin-right: 25px;
     padding-bottom: 3px;
     text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #535858;
 }
 
 /* Principal */
@@ -98,8 +102,12 @@ article#video, article#exposicoes {
     float: left;
     width: 310px;
     margin-left: 25px;
-    
 }
+
+article#historia p{
+    text-align: justify;
+}
+
 
 article#mapa, article#historia {
     float: left;
@@ -119,7 +127,7 @@ aside {
 
 section#visita {
     background: #cdc8b1;
-    padding: 10px 27px 27px 27px;
+    padding: 24px;
     margin-top: 10px;
 }
 
@@ -127,15 +135,15 @@ fieldset {
     border: none;
 }
 
-.qtd .numero{
+.qtd .numero {
     width: 40px;
 }
 
 .data {
-    float: left;  
+    float: left;
 }
 
-.data input{
+.data input {
     width: 115px;
     margin-right: 10px;
 }
@@ -159,6 +167,10 @@ section#galeria a {
     margin: 10px 0 0 20px;
 }
 
+section#galeria img {
+    margin: 2px 0 0 2px;
+}
+
 /* Início Rodapé */
 
 footer {
@@ -169,6 +181,6 @@ footer {
     background: url(../img/fundo-rodape.png) no-repeat center top;
 }
 
-footer a {
+footer>p a {
     padding: 2px 10px;
 }
